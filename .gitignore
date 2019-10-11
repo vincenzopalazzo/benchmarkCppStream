@@ -1,0 +1,16 @@
+#file ide
+.idea/
+.vscode
+
+#CMake file
+CMakeFiles
+cmake-build-debug
+Makefile
+CMakeCache.txt
+cmake_install.cmake
+
+#Reproducible
+benchmarkCppStream
+benchmarkCppStream.cbp
+res/*.txt
+res/*.dat
