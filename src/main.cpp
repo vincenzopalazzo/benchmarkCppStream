@@ -45,7 +45,7 @@ void saveFileWithZLib()
     gzFile gzFile;
     gzFile = gzopen("res/fzFile.dat", "wb");
     long sizeData = sizeof(char) * ROW_GRAPH_SPYCBLOCK.size();
-    for (int i = 0; i < 90000; i++) {
+    for (int i = 0; i < 100000000; i++) {
         gzwrite(gzFile, ROW_GRAPH_SPYCBLOCK.data(), sizeData);
     }
     gzclose(gzFile);
@@ -53,8 +53,8 @@ void saveFileWithZLib()
 
 void saveFileWithOfstream()
 {
-    std::ofstream ofstream("res/ofstreamFile.tx");
-    for (int i = 0; i < 90000; i++) {
+    std::ofstream ofstream("res/ofstreamFile.txt");
+    for (int i = 0; i < 100000000; i++) {
         ofstream << ROW_GRAPH_SPYCBLOCK;
     }
     ofstream.close();
@@ -85,6 +85,5 @@ void decompressFileWithZLib()
     for (auto character : unzippedData)
     {
         std::cout << character;
-
     }
 }

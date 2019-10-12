@@ -1,0 +1,124 @@
+{
+  "context": {
+    "date": "2019-10-12 00:23:50",
+    "host_name": "vincenzo",
+    "executable": "./benchmarkcfile",
+    "num_cpus": 4,
+    "mhz_per_cpu": 3000,
+    "cpu_scaling_enabled": true,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 256000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 3072000000,
+        "num_sharing": 4
+      }
+    ],
+    "load_avg": [2.5,1.56,1.43],
+    "library_build_type": "debug"
+  },
+  "benchmarks": [
+    {
+      "name": "BM_100/8",
+      "run_name": "BM_100/8",
+      "run_type": "iteration",
+      "repetitions": 0,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 12,
+      "real_time": 5.5004604750138246e+07,
+      "cpu_time": 5.4486006416666664e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_1000/8",
+      "run_name": "BM_1000/8",
+      "run_type": "iteration",
+      "repetitions": 0,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 13,
+      "real_time": 5.2344281538143359e+07,
+      "cpu_time": 5.1923756923076920e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_10000/8",
+      "run_name": "BM_10000/8",
+      "run_type": "iteration",
+      "repetitions": 0,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 13,
+      "real_time": 5.5483286999963008e+07,
+      "cpu_time": 5.2400443461538471e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_100000/8",
+      "run_name": "BM_100000/8",
+      "run_type": "iteration",
+      "repetitions": 0,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 11,
+      "real_time": 5.6564220817976594e+07,
+      "cpu_time": 5.6215597090909101e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_1000000/8",
+      "run_name": "BM_1000000/8",
+      "run_type": "iteration",
+      "repetitions": 0,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 12,
+      "real_time": 6.8307417333320096e+07,
+      "cpu_time": 5.6375247083333343e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_10000000/8",
+      "run_name": "BM_10000000/8",
+      "run_type": "iteration",
+      "repetitions": 0,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 11,
+      "real_time": 7.3512544636535242e+07,
+      "cpu_time": 5.2635360999999948e+07,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_100000000/8",
+      "run_name": "BM_100000000/8",
+      "run_type": "iteration",
+      "repetitions": 0,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 13,
+      "real_time": 8.1072899845961586e+07,
+      "cpu_time": 5.6682976692307748e+07,
+      "time_unit": "ns"
+    }
+  ]
+}

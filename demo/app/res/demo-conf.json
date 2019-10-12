@@ -1,0 +1,9 @@
+{
+    "results": [
+        "benchmark_ofstream_zlib.json",
+        "benchmark_ofstream.json",
+        "benchmark_cfile_zlib.json",
+        "benchmark_cfile.json"
+
+    ]
+}

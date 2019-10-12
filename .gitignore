@@ -14,3 +14,9 @@ benchmarkCppStream
 benchmarkCppStream.cbp
 res/*.txt
 res/*.dat
+
+#Demo file
+demo/.tmp
+demo/node_modules
+demo/.editorconfig
+demo/sdasd
