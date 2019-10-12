@@ -1,5 +1,5 @@
 
-"use strict";
+'use strict';
 
 class DAOLocalFile{
 
@@ -12,7 +12,7 @@ class DAOLocalFile{
         return fetch(path)
                 .then(response => response.json())
                     .then(function(data){
-                        console.debug("Response to path: " + path);
+                        console.debug('Response to path: ' + path);
                         console.debug(data);
                         return data;
                     })

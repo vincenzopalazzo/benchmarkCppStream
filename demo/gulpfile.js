@@ -6,6 +6,7 @@ const del = require('del');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const { argv } = require('yargs');
+const ghPages = require('gulp-gh-pages');
 
 const $ = gulpLoadPlugins();
 const server = browserSync.create();
@@ -15,6 +16,11 @@ const port = argv.port || 9000;
 const isProd = process.env.NODE_ENV === 'production';
 const isTest = process.env.NODE_ENV === 'test';
 const isDev = !isProd && !isTest;
+
+function deploy(){
+  return src('dist/**/*')
+    .pipe(ghPages());
+}
 
 function styles() {
   return src('app/styles/*.scss')
@@ -186,3 +192,4 @@ if (isDev) {
 exports.serve = serve;
 exports.build = build;
 exports.default = build;
+exports.deploy = deploy;

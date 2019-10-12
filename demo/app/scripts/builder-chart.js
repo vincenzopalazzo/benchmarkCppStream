@@ -1,7 +1,7 @@
 
-"use strict";
+'use strict';
 
-var RES_PATH = "res/";
+var RES_PATH = 'res/';
 
 let colors = {
     backgroundColor: [
@@ -51,7 +51,7 @@ class BuilderChart{
 
     loadConfigurator(){
         let self = this;
-        let path = RES_PATH +  "demo-conf.json";
+        let path = RES_PATH +  'demo-conf.json';
         let dao = new DAOLocalFile(path);
         let configData = dao.loadFile(path);
         configData.then(config => {
@@ -60,7 +60,7 @@ class BuilderChart{
             files.forEach(function(file) {
                 let promisseFile = dao.loadFile(RES_PATH + file);
                 promisseFile.then(dataFile => {
-                    console.debug("The object file is: " + dataFile);
+                    console.debug('The object file is: ' + dataFile);
                     loadNum++;
                     self.updateBarGraph(file.replace('.json', ''), colors.backgroundColor[loadNum], colors.borderColor[loadNum],
                     [
